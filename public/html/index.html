@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Bloom Modas</title>
+</head>
+
+<body>
+    <header>
+        <div class="hcontent">
+            <div class="textleft">
+                <p class="text">SEJA BEM VINDO! FAÇA SEU <a href="../html/login.html" target="blank">LOGIN</a> OU <a
+                        href="../html/register.html" target="blank">CADASTRE-SE</a></p>
+            </div>
+            <div class="socialmedia">
+                <i class="fa-brands fa-instagram"></i>
+                <p class="text">Instagram</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <p class="text">facebook</p>
+            </div>
+        </div>
+    </header>
+    <div class="imgcontent">
+        <img src="../imgs/Logo.jpeg" width="100px" height="50px" alt="logo loja">
+        <p>ATENDIMENTO</p>
+        <input type="text" class="pesq" placeholder="O QUE VOCE ESTA BUSCANDO?">
+        <div>
+            <i class="fa-solid fa-shop"></i>
+            <p class="text">Pedidos</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-box-open"></i>
+            <p class="text">Carrinho</p>
+        </div>
+    </div>
+    <div class="content">
+        <div></div>
+        <div class="hvtext">
+            <p class="text2" onclick="msg()">Promoções</p>
+        </div>
+        <div class="hvtext">
+            <p class="text2" onclick="msg()">Tshirts</p>
+        </div>
+        <div class="hvtext">
+            <p class="text2" onclick="msg()">Vestidos</p>
+        </div>
+        <div class="hvtext">
+            <p class="text2" onclick="msg()">Croppeds</p>
+        </div>
+        <div class="hvtext">
+            <p class="text2" onclick="mostrar()" id="dropbtn">+Categorias</p>
+        </div>
+        <div></div>
+    </div>
+    <div class="dropcat" id="dropopt">
+        <p>CALÇAS</p>
+        <p>ROUPAS INTIMAS</p>
+    </div>
+    <nav class="imgbox">
+        <img src="/public/imgs/stand/stand1.jpeg" width="450px" height="250px" alt="blusas" onclick="msg()">
+        <img src="/public/imgs/stand/stand2.jpeg" width="450px" height="250px" alt="blusas" onclick="msg()">
+    </nav>
+</body>
+<script src="https://kit.fontawesome.com/106b45e407.js"></script>
+<script src="../scripts/scripts.js"></script>
+
+</html>
