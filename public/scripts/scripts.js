@@ -16,3 +16,6 @@ window.onclick = (event) => {
         }
     }
 }
+function{
+    
+}
