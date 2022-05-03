@@ -16,6 +16,9 @@ window.onclick = (event) => {
         }
     }
 }
-function{
-    
+function redirect(){
+    window.location.href = "index.html";
 }
+$('.carousel').carousel({
+    interval: 2000
+});

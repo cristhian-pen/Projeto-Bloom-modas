@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="../styles/owl/owl.theme.default.min.css">
     <title>Bloom Modas</title>
 </head>
 
@@ -17,16 +21,19 @@
                         href="../html/register.html" target="blank">CADASTRE-SE</a></p>
             </div>
             <div class="socialmedia">
-                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-instagram" onclick="msg()"></i>
                 <p class="text">Instagram</p>
-                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-facebook-f" onclick="msg()"></i>
                 <p class="text">facebook</p>
             </div>
         </div>
     </header>
     <div class="imgcontent">
-        <img src="../imgs/Logo.jpeg" width="100px" height="50px" alt="logo loja">
-        <p>ATENDIMENTO</p>
+        <img src="../imgs/Logo.jpeg" width="100px" height="50px" alt="logo loja" onclick="redirect()">
+        <div>
+            ATENDIMENTO </br>
+            SAC:(27)0000 - 0000
+        </div>
         <input type="text" class="pesq" placeholder="O QUE VOCE ESTA BUSCANDO?">
         <div>
             <i class="fa-solid fa-shop"></i>
@@ -60,12 +67,304 @@
         <p>CALÇAS</p>
         <p>ROUPAS INTIMAS</p>
     </div>
-    <nav class="imgbox">
-        <img src="/public/imgs/stand/stand1.jpeg" width="450px" height="250px" alt="blusas" onclick="msg()">
-        <img src="/public/imgs/stand/stand2.jpeg" width="450px" height="250px" alt="blusas" onclick="msg()">
-    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide imgbox" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../imgs/stand/stand1.jpeg" class="d-block w-100" alt="blusas">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>As</p>
+                    <p>melhores</p>
+                    <p>ofertas de</p>
+                    <p>T-shirts</p>
+                    <button type="button" class="btnCentral">Aproveite</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../imgs/stand/stand2.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>As</p>
+                    <p>melhores</p>
+                    <p>ofertas de</p>
+                    <p>T-shirts</p>
+                    <button type="button" class="btnCentral">Aproveite</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../imgs/stand/WhatsApp Image 2022-04-19 at 22.32.00 (2).jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>As</p>
+                    <p>melhores</p>
+                    <p>ofertas de</p>
+                    <p>T-shirts</p>
+                    <button type="button" class="btnCentral">Aproveite</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../imgs/stand/WhatsApp Image 2022-04-19 at 22.32.01.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <p>As</p>
+                    <p>melhores</p>
+                    <p>ofertas de</p>
+                    <p>T-shirts</p>
+                    <button type="button" class="btnCentral">Aproveite</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promo">
+        <center>
+            <h2>Promoções</h2>
+        </center>
+        <div class="owl-carousel owl-theme car">
+            <div class="imgroll">
+                <img src="../imgs/Coleção1/WhatsApp Image 2022-04-19 at 22.32.09.jpeg">
+                <div>
+                    <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+            <div class="imgroll">
+                <img src="../imgs/coleção2/WhatsApp Image 2022-04-19 at 22.31.59 (1).jpeg">
+                <div>
+                    <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+            <div class="imgroll">
+                <img src="../imgs/coleçao3/WhatsApp Image 2022-04-19 at 22.31.53.jpeg" ;>
+                <div>
+                    <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div class="imgroll">
+            <div class="imgroll">
+                <img src="../imgs/coleção4/WhatsApp Image 2022-04-19 at 22.32.02 (1).jpeg">
+                <div>
+                    <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+            <div class="imgroll">
+                <img src="../imgs/coleção5/WhatsApp Image 2022-04-19 at 22.32.20.jpeg">
+                <div>
+                    <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+            <div class="imgroll">
+                <img src="../imgs/coleção6/WhatsApp Image 2022-04-19 at 22.32.21.jpeg">
+                <div>
+                    <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promo">
+        <center>
+            <h2>Lançamentos</h2>
+        </center>
+        <div class="owl-carousel owl-theme car">
+            <div class="imgroll">
+                <img src="../imgs/coleção7/WhatsApp Image 2022-04-19 at 22.32.23.jpeg">
+                <div>
+                    <h5>Vestido longo</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+            <div class="imgroll">
+                <img src="../imgs/coleção8/WhatsApp Image 2022-04-19 at 22.32.24 (1).jpeg">
+                <div>
+                    <h5>Vestido longo</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+            <div class="imgroll">
+                <img src="../imgs/coleção9/WhatsApp Image 2022-04-19 at 22.32.05 (1).jpeg" ;>
+                <div>
+                    <h5>Vestido longo</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div class="imgroll">
+            <div class="imgroll">
+                <img src="../imgs/coleção10/WhatsApp Image 2022-04-19 at 22.31.54.jpeg">
+                <div>
+                    <h5>Vestidos longo</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+            <div class="imgroll">
+                <img src="../imgs/coleção11/WhatsApp Image 2022-04-19 at 22.32.03 (1).jpeg">
+                <div>
+                    <h5>Vestidos longo</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+            <div class="imgroll">
+                <img src="../imgs/coleção13/WhatsApp Image 2022-04-19 at 22.32.00 (1).jpeg">
+                <div>
+                    <h5>Vestido longo</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promo">
+        <center>
+            <h2>Outlet 30% OFF</h2>
+        </center>
+        <div class="owl-carousel owl-theme car">
+            <div class="imgroll">
+                <img src="../imgs/coleção14/WhatsApp Image 2022-04-19 at 22.31.57 (2).jpeg">
+                <div>
+                    <h5>Tshirts</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+            <div class="imgroll">
+                <img src="../imgs/coleção15/WhatsApp Image 2022-04-19 at 22.31.57 (1).jpeg">
+                <div>
+                    <h5>Tshirts</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+            <div class="imgroll">
+                <img src="../imgs/coleção16/WhatsApp Image 2022-04-19 at 22.32.08 (1).jpeg" ;>
+                <div>
+                    <h5>Tshirts</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div class="imgroll">
+            <div class="imgroll">
+                <img src="../imgs/stand/stand1.jpeg">
+                <div>
+                    <h5>Vestidos longo</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+            <div class="imgroll">
+                <img src="../imgs/stand/WhatsApp Image 2022-04-19 at 22.32.00 (2).jpeg">
+                <div>
+                    <h5>Vestidos longo</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+            <div class="imgroll">
+                <img src="../imgs/stand/WhatsApp Image 2022-04-19 at 22.32.01.jpeg">
+                <div>
+                    <h5>Tshirts</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="barEmail">
+        <div class="emailcontent">
+            <h3>Cadastre seu email</h3>
+            <p>ganhe 10% de desconto em qualquer compra</p>
+        </div>
+        <div class="ipt">
+            <input type="email" id="email" placeholder="Cadastre seu email">
+            <button type="button">cadastre ></button>
+        </div>
+        <div class="ico">
+            <i class="fa-brands fa-instagram" onclick="msg()"></i>
+            <i class="fa-brands fa-facebook-f" onclick="msg()"></i>
+        </div>
+    </div>
+    <div class="ftcontent">
+        <div>
+            <strong>
+                <h5>Conteudo</h5>
+            </strong>
+            <ol>
+                <li href="#promoçoes">Promoções</li>
+                <li href="tshirts">Tshirts</li>
+                <li href="vestidos">Vestidos</li>
+                <li href="croppeds">Croppeds</li>
+            </ol>
+        </div>
+        <div>
+            <strong>
+                <h5>Atendimento</h5>
+            </strong>
+            <ul>
+                <li>atendimento@hotmail.com.br</li>
+                <li>Tel:(27)0000-0000</li>
+            </ul>
+        </div>
+        <div>
+            <strong>
+                <h5>Redes Sociais</h5>
+            </strong>
+            <ol>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>WhatsApp</li>
+            </ol>
+        </div>
+        <div class="payForm">
+            <strong>
+                <h5>Formas de pagamento</h5>
+            </strong>
+            <div class="payList">
+                <i class="fa-solid fa-money-bill-1-wave"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-pix"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+                <i class="fa-brands fa-cc-diners-club"></i>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>DESENVOLVIDO POR CRISTHIAN MOURA</p>
+        <p>COPYRIGHT © 2015 TODOS OS DIREITOS RESERVADOS. BLOOM MODAS</p>
+        <div>
+            <i class="fa-brands fa-instagram" onclick="msg()"></i>
+            <i class="fa-brands fa-facebook-f" onclick="msg()"></i>
+        </div>
+    </footer>
 </body>
 <script src="https://kit.fontawesome.com/106b45e407.js"></script>
 <script src="../scripts/scripts.js"></script>
+<script src="../scripts/owl/jquery.min.js"></script>
+<script src="../scripts/owl/owl.carousel.min.js"></script>
+<script src="../scripts/owl/setup.js""></script>
+<script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 
 </html>
