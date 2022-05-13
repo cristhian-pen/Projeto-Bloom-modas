@@ -1,0 +1,25 @@
+.gridcol{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.divide{
+    margin: 13% 0 10px 0;
+}
+.accordion-button{
+    width: 50%;
+    height: 3px;
+}
+.accordion{
+    margin-top: 40%;
+}
+img{
+    border-radius: 6px;
+}
+.promtxt{
+    text-align: center;
+}
+.promtxt h2{
+    padding-top: 50px;
+}

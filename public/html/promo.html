@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/promo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Bloom Modas</title>
+</head>
+
+<body>
+    <header>
+        <div class="hcontent">
+            <div class="textleft">
+                <p class="text">FRETE GRATIS EM COMPRAS A PARTIR DE R$250,00</p>
+            </div>
+            <div class="socialmedia">
+                <i class="fa-brands fa-instagram" onclick="msg()"></i>
+                <p class="text">Instagram</p>
+                <i class="fa-brands fa-facebook-f" onclick="msg()"></i>
+                <p class="text">facebook</p>
+            </div>
+        </div>
+    </header>
+    <div class="imgcontent">
+        <img src="../imgs/Logo.jpeg" width="100px" height="50px" alt="logo loja" onclick="redirect()">
+        <div>
+            ATENDIMENTO </br>
+            SAC:(27)0000 - 0000
+        </div>
+        <input type="text" class="pesq" placeholder="O QUE VOCE ESTA BUSCANDO?">
+        <div>
+            <i class="fa-solid fa-shop"></i>
+            <p class="text">Pedidos</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-box-open"></i>
+            <p class="text">Carrinho</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-user" onclick="redsignin()"></i>
+            <p class="text">Entrar / Cadastrar</p>
+        </div>
+    </div>
+    <div class="content">
+        <div></div>
+        <div class="hvtext">
+            <p class="text2" onclick="msg()">Promoções</p>
+        </div>
+        <div class="hvtext">
+            <p class="text2" onclick="msg()">Tshirts</p>
+        </div>
+        <div class="hvtext">
+            <p class="text2" onclick="msg()">Vestidos</p>
+        </div>
+        <div class="hvtext">
+            <p class="text2" onclick="msg()">Croppeds</p>
+        </div>
+        <div class="hvtext">
+            <p class="text2" onclick="mostrar()" id="dropbtn">+Categorias</p>
+        </div>
+        <div></div>
+    </div>
+    <div class="dropcat" id="dropopt">
+        <p>CALÇAS</p>
+        <p>ROUPAS INTIMAS</p>
+    </div>
+    <!----------------------------------------------INICIO DA PAGINA DE PRODUTOS----------------------------------------------->
+    <h2><center>Promoções</center></h2>
+    <p class="promtxt">Aproveite as Promoções de Roupas, as melhores promoções</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Tamanho
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">P</li>
+                                <li class="list-group-item">M</li>
+                                <li class="list-group-item">G</li>
+                                <li class="list-group-item">GG</li>
+                                <li class="list-group-item">XL</li>
+                              </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Cor
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Vermelho</li>
+                                <li class="list-group-item">Branco</li>
+                                <li class="list-group-item">Azul</li>
+                                <li class="list-group-item">Verde</li>
+                                <li class="list-group-item">Marron</li>
+                              </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Preço
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                                <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li>
+                              </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-8 gridcol">
+                <div class="divide">
+                    <img src="../imgs/Coleção1/WhatsApp Image 2022-04-19 at 22.32.09.jpeg" width="240px" height="300px">
+                    <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+                <div class="divide">
+                    <img src="../imgs/coleção2/WhatsApp Image 2022-04-19 at 22.31.59 (1).jpeg" width="240px"
+                        height="300px">
+                        <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+                <div class="divide">
+                    <img src="../imgs/coleção4/WhatsApp Image 2022-04-19 at 22.32.02 (1).jpeg" width="240px"
+                        height="300px">
+                        <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+                <div class="divide">
+                    <img src="../imgs/coleção5/WhatsApp Image 2022-04-19 at 22.32.20.jpeg" width="240px" height="300px">
+                    <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+                <div class="divide">
+                    <img src="../imgs/coleção6/WhatsApp Image 2022-04-19 at 22.32.21.jpeg" width="240px" height="300px">
+                    <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+                <div class="divide">
+                    <img src="../imgs/coleção7/WhatsApp Image 2022-04-19 at 22.32.24.jpeg" width="240px" height="300px">
+                    <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+                <div class="divide">
+                    <img src="../imgs/coleção8/WhatsApp Image 2022-04-19 at 22.32.25.jpeg" width="240px" height="300px">
+                    <h5>Conjunto Verão mid</h5><br>
+                    <h6><del>R$100,00</del></h6>
+                    <h3>R$ 83,99</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--  <div class="container-fluid">
+        <img src="../imgs/coleçao3/WhatsApp Image 2022-04-19 at 22.31.57.jpeg">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Tamanho
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordeon-body">
+                        <li class="list-group-item container-fluid">An item</li>
+                        <li class="list-group-item container-fluid">A second item</li>
+                        <li class="list-group-item container-fluid">A third item</li>
+                        <li class="list-group-item container-fluid">A fourth item</li>
+                        <li class="list-group-item container-fluid">And a fifth one</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+    <!----------------------------------------------FINAL DA PAGINA DE PRODUTOS----------------------------------------------->
+    <div class="wrap">
+        <div class="barEmail">
+            <div class="emailcontent">
+                <h3>Cadastre seu email</h3>
+                <p>ganhe 10% de desconto em qualquer compra</p>
+            </div>
+            <div class="ipt">
+                <input type="email" id="email" placeholder="Cadastre seu email">
+                <button type="button">cadastre ></button>
+            </div>
+            <div class="ico">
+                <i class="fa-brands fa-instagram" onclick="msg()"></i>
+                <i class="fa-brands fa-facebook-f" onclick="msg()"></i>
+            </div>
+        </div>
+        <div class="ftcontent">
+            <div>
+                <strong>
+                    <h5>Conteudo</h5>
+                </strong>
+                <ol>
+                    <li href="#promoçoes">Promoções</li>
+                    <li href="tshirts">Tshirts</li>
+                    <li href="vestidos">Vestidos</li>
+                    <li href="croppeds">Croppeds</li>
+                </ol>
+            </div>
+            <div>
+                <strong>
+                    <h5>Atendimento</h5>
+                </strong>
+                <ul>
+                    <li>atendimento@hotmail.com.br</li>
+                    <li>Tel:(27)0000-0000</li>
+                </ul>
+            </div>
+            <div>
+                <strong>
+                    <h5>Redes Sociais</h5>
+                </strong>
+                <ol>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>WhatsApp</li>
+                </ol>
+            </div>
+            <div class="payForm">
+                <strong>
+                    <h5>Formas de pagamento</h5>
+                </strong>
+                <div class="payList">
+                    <i class="fa-solid fa-money-bill-1-wave"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-pix"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-cc-diners-club"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>DESENVOLVIDO POR CRISTHIAN MOURA</p>
+        <p>COPYRIGHT © 2022 TODOS OS DIREITOS RESERVADOS. BLOOM MODAS</p>
+        <div>
+            <i class="fa-brands fa-instagram" onclick="msg()"></i>
+            <i class="fa-brands fa-facebook-f" onclick="msg()"></i>
+        </div>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/106b45e407.js"></script>
+<script src="../scripts/scripts.js"></script>
+<script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+</html>

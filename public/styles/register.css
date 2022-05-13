@@ -1,0 +1,24 @@
+.formc{
+    position: relative;
+    top: 50px;
+    left:30%;
+    width: 40%;
+    text-align: center;
+}
+form p{
+    font-weight: bolder;
+    font-size: smaller;
+    font-style: oblique;
+}
+.formcad{
+    position: relative;
+    top:20px;
+    left: 35%;
+    width: 30%;
+}
+button{
+    margin-bottom: 15px;
+}
+.cont{
+    margin-bottom: 120px;
+}
