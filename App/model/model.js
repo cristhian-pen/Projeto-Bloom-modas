@@ -31,7 +31,8 @@ const user = db.define('users', {
     }
 });
 
-/* user.create({
+/* 
+    user.create({
 
     NOME: "teste",
 
@@ -42,7 +43,7 @@ const user = db.define('users', {
     SEXO: "F",
 
     SENHA: "passsword"
-});
+}); 
  */
 
 //user.sync();

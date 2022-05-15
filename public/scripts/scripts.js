@@ -1,5 +1,8 @@
 const { get } = require("express/lib/response");
 
+
+const router = require('../../routes/home')
+
 function msg() {
     alert("Feature in development");
 }
