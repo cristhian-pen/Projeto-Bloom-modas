@@ -1,40 +1,39 @@
 <div class="container-fluid">
-        <form class="formcad shadow p-3 mb-5 bg-body rounded" method="post">
+        <form action="/bloommodas/testepost" class="formcad shadow p-3 mb-5 bg-body rounded" method="POST">
             <p>Ainda não sou cliente Bloom modas</p>
             <div class="mb-3">
                 <label for="clientName" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="usrname" aria-describedby="text"
+                <input type="text" class="form-control" name="nome" id="usrname" aria-describedby="text"
                     placeholder="Digite seu nome">
             </div>
             <div class="mb-3">
                 <label for="" class="form-label">Sobrenome</label>
-                <input type="text" class="form-control" id="usrlastName" placeholder="Digite seu sobrenome">
+                <input type="text" class="form-control" name="sobrenome" id="usrlastName" placeholder="Digite seu sobrenome">
             </div>
             <div class="mb-3">
                 <label for="userEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="usremail" placeholder="seuemail@seuemail.com.br">
+                <input type="email" class="form-control" name="email" id="usremail" placeholder="seuemail@seuemail.com.br">
             </div>
             <div class="md-4">
                 <label for="sexUser" class="formlabel">Sexo</label>
-                <select id="usrsex" class="form-select">
-                    <option selected>...</option>
-                    <option>F</option>
-                    <option>M</option>
-                    <option>Indefinido</option>
+                <select id="usrsex" name="select" class="form-select">
+                    <option>...</option>
+                    <option value="F">F</option>
+                    <option value="M">M</option>
                 </select></br>
                 <div class="mb-3">
                     <label for="userCPF" class="form-label">CPF</label>
-                    <input type="text" class="form-control" id="usrCpf" placeholder="000.000.000-00">
+                    <input type="text" class="form-control" name="cpf" id="usrCpf" placeholder="000.000.000-00">
                 </div>
                 <div class="mb-3">
                     <label for="userPwd" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="usrpassword" placeholder="***">
+                    <input type="password" class="form-control" name="password" id="usrpassword" placeholder="***">
                 </div>
                 <div class="mb-3">
                     <label for="usertPwd" class="form-label">Confirme sua senha</label>
                     <input type="password" class="form-control" id="usrtruepassword" placeholder="***">
                 </div>
             </div>
-            <button type="button" class="btn btn-dark container-fluid" onclick="cadastrar()">Cadastar</button>
+            <button type="submit" class="btn btn-dark container-fluid">Cadastar</button>
         </form>
     </div>

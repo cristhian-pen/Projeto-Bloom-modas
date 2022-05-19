@@ -18,3 +18,6 @@ npm install --save sequelize
 
 # Driver de gerenciamento Mysql
 npm install --save mysql2
+
+# Biblioteca para trabalhar com formularios
+npm install --save body-parser

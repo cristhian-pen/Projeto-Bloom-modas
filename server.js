@@ -4,14 +4,15 @@ const {engine} = require("express-handlebars");
 
 const home = require("./routes/home"); //importação das rotas definidas no arquivo home
 const sequelize = require('./App/config/config_db'); //importação da conexão da configuração da base de dados
+const bodyParser = require('body-parser'); //biblioteca de manipulação de dados dos formularios
 
 //engine que ira rodar os templates handlebars
 app.engine('handlebars', engine({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
-
-//comando para o servidor receber requisições JSON
-//app.use(express.json);
+//body parser
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 //caminho dos arquivos estaticos css e js da pagina
 app.use(express.static ('public'));

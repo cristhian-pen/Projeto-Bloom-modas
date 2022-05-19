@@ -1,17 +1,17 @@
 <div class="container-fluid">
         <div class="cont">
-            <form class="formc shadow p-3 mb-5 bg-body rounded">
+            <form action="/bloommodas/testelogin" class="formc shadow p-3 mb-5 bg-body rounded" method="post">
                 <p>Já sou cliente Bloom modas</p>
                 <div class="mb-3">
-                    <label for="userInput" class="form-label">Email ou cpf</label>
-                    <input type="text" class="form-control" id="user" aria-describedby="text"
-                        placeholder="seuemail@seuemail.com.br / 000.000.000-00">
+                    <label for="userInput" class="form-label">Email</label>
+                    <input type="text" class="form-control" name="nome" id="user" aria-describedby="text"
+                        placeholder="seuemail@seuemail.com.br">
                 </div>
                 <div class="mb-3">
                     <label for="userpassword" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="****">
+                    <input type="password" class="form-control" name="password" id="pwd" placeholder="****">
                 </div>
-                <button type="button" class="btn btn-dark container-fluid" onclick="aut()" id="btnLogin">Entrar</button>
+                <button type="submit" class="btn btn-dark container-fluid" id="btnLogin">Entrar</button>
                 <p>OU</p>
                 <p>Ainda não e cliente? Cadastre-se agora!</p>
                 <button type="button" class="btn btn-dark container-fluid" id="btnLogin"

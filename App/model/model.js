@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const db = require('../config/config_db');
 
 const user = db.define('users', {
-    
+
     CD_USUARIO: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -31,21 +31,6 @@ const user = db.define('users', {
     }
 });
 
-/* 
-    user.create({
+    //user.sync();
 
-    NOME: "teste",
-
-    SOBRENOME: "teste",
-
-    EMAIL: "teste@teste",
-
-    SEXO: "F",
-
-    SENHA: "passsword"
-}); 
- */
-
-//user.sync();
-
-module.exports = user;
+    module.exports = user;

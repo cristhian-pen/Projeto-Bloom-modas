@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const insertUser = require('../App/model/model');
-const app = require('../server');
+const user = require('../App/model/model');
 
 router.get('/', (req , res) => {
     res.render('home/index');
@@ -12,8 +11,23 @@ router.get('/login', (req, res) => {
     res.render('auth/sign')
 });
 
+router.post('/testelogin', (req, res) => {
+    user.findAll({
+        where: {
+            EMAIL: req.body.nome,
+            SENHA: req.body.password
+        }
+    }).then(() => {
+        res.redirect('/bloommodas');
+        console.log("Passei aqui1");
+    }).catch(() => {
+        res.redirect('/bloommodas/login');
+        console.log("Passei aqui2");
+    })
+});
+
 router.get('/cadastro', (req , res) => {
-res.render('auth/register');
+    res.render('auth/register');
 });
 
 router.get('/promocoes', (req, res) => {
@@ -21,7 +35,20 @@ router.get('/promocoes', (req, res) => {
 });
 
 router.post('/testepost', (req, res) => {
-    console.log(req.body);
+    user.create({
+        NOME: req.body.nome,
+        SOBRENOME: req.body.sobrenome,
+        EMAIL: req.body.email,
+        SEXO: req.body.select,
+        SENHA: req.body.password
+    });
+    try {
+        res.redirect('/bloommodas/login');
+    } catch(erro) { 
+        res.render("User not created, please try again");
+        res.redirect('/cadastro');
+    };
 });
+
 
 module.exports = router;

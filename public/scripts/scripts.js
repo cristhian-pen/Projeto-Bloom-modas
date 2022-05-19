@@ -21,16 +21,16 @@ window.onclick = (event) => {
         }
     }
 }
-function redirect(){
+function redirect() {
     window.location.assign('/bloommodas');
-} 
+}
 
 function aut() {
     var user = document.getElementById('user');
     var pwd = document.getElementById('pwd');
 
     if (user.value == "teste@teste.com.br", pwd.value == "teste") {
-       redirect();
+        redirect();
         return;
 
     } else {
@@ -38,45 +38,9 @@ function aut() {
         event.preventDefault();
     }
 }
+
 function cadastrar() {
-
-    let username = document.getElementById('usrname');
-    let lastname = document.getElementById('usrlastname');
-    let email = document.getElementById('usremail');
-    let cpf = document.getElementById('usrcpf');
-    let senha = document.getElementById('usrpassword');
-    let truesenha = document.getElementById('usrtruepassword');
-
-    if (username.value == '') {
-        alert("Digite seu nome!");
-        event.preventDefault();
-    }    
-    else if(lastname.value == '') {
-        alert("Digite seu sobrenome!");
-        event.preventDefault();
-    } 
-    else if(email.value == ''){
-        alert("Digite seu email!");
-        event.preventDefault();
-    } 
-    else if (cpf.value == '') {
-        alert("Digite seu cpf!");
-        event.preventDefault();
-    } 
-    else if (senha.value != truesenha.value){
-        alert("Senhas não coincidem!");
-        event.preventDefault();
-    } 
-    else if(senha.value == '',truesenha.value == '' ){
-        alert("Digite a senha!");
-        event.preventDefault();
-    } else {
-        alert('Parabens! Voce esta cadastrado');
-        setTimeout(() => {
-           redirect();
-        }, 3000);
-
-    }
+    window.location.assign('/bloommodas/testepost');
 }
 
 function redsignin() {
