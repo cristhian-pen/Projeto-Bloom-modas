@@ -22,3 +22,51 @@ button{
 .cont{
     margin-bottom: 120px;
 }
+/*--------------------------------------ALERTS------------------------------------*/
+.invalid{
+    animation: shake 300ms;
+}
+@keyframes shake {
+    25% { transform: translateX(4px); }
+    50% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+}
+
+/*-------------------------------------CARRINHO DE COMPRA----------------------------*/
+.acert{
+    margin-top: 30px;
+}
+.navbar{
+    margin-bottom: 30px;
+}
+.d-flex{
+    justify-content: space-evenly;
+}
+.btn{
+    height: 40px;
+}
+.carrinho{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.carrinho > button {
+    margin-top: 10px;
+}
+.foo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    height: 70px;
+    background-color: darkgray;
+}
+.btn-acert{
+    margin-top: 5px;
+}
+.btn-acert:hover{
+    cursor: pointer;
+    animation: shake .3s;
+}

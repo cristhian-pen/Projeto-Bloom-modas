@@ -12,9 +12,10 @@
 img{
     border-radius: 6px;
 }
-img:hover{
+.divide > img:hover{
+    transform: scale(.9);
+    transition: .8s ease-in-out all;
     cursor: pointer;
-    transform: scale(0.9);
 }
 .promtxt{
     text-align: center;

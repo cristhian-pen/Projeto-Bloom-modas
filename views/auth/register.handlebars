@@ -1,37 +1,37 @@
 <div class="container-fluid">
-        <form action="/bloommodas/testepost" class="formcad shadow p-3 mb-5 bg-body rounded" method="POST">
+        <form action="/register/signup" class="formcad shadow p-3 mb-5 bg-body rounded" onsubmit="validationFields()" method="POST">
             <p>Ainda não sou cliente Bloom modas</p>
             <div class="mb-3">
                 <label for="clientName" class="form-label">Nome</label>
-                <input type="text" class="form-control" name="nome" id="usrname" aria-describedby="text"
+                <input type="text" class="form-control invalid" name="nome" id="usrname" aria-describedby="text"
                     placeholder="Digite seu nome">
             </div>
             <div class="mb-3">
                 <label for="" class="form-label">Sobrenome</label>
-                <input type="text" class="form-control" name="sobrenome" id="usrlastName" placeholder="Digite seu sobrenome">
+                <input type="text" class="form-control invalid" name="sobrenome" id="usrLastName" placeholder="Digite seu sobrenome">
             </div>
             <div class="mb-3">
                 <label for="userEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" id="usremail" placeholder="seuemail@seuemail.com.br">
+                <input type="email" class="form-control invalid" name="email" id="usrEmail" placeholder="seuemail@seuemail.com.br">
             </div>
             <div class="md-4">
                 <label for="sexUser" class="formlabel">Sexo</label>
-                <select id="usrsex" name="select" class="form-select">
+                <select id="usrSex" name="select" class="form-select">
                     <option>...</option>
                     <option value="F">F</option>
                     <option value="M">M</option>
                 </select></br>
                 <div class="mb-3">
                     <label for="userCPF" class="form-label">CPF</label>
-                    <input type="text" class="form-control" name="cpf" id="usrCpf" placeholder="000.000.000-00">
+                    <input type="text" pattern="\[0-9]{3}\. \[0-9]{3}\. \[0-9]{3}-\[0-9]{2}" class="form-control invalid" name="cpf" id="usrCpf" placeholder="000.000.000-00">
                 </div>
                 <div class="mb-3">
                     <label for="userPwd" class="form-label">Senha</label>
-                    <input type="password" class="form-control" name="password" id="usrpassword" placeholder="***">
+                    <input type="password" class="form-control invalid" name="password" id="usrPassword" placeholder="***">
                 </div>
-                <div class="mb-3">
+                <div class="mb-3"
                     <label for="usertPwd" class="form-label">Confirme sua senha</label>
-                    <input type="password" class="form-control" id="usrtruepassword" placeholder="***">
+                    <input type="password" class="form-control invalid " id="truePassword" placeholder="***">
                 </div>
             </div>
             <button type="submit" class="btn btn-dark container-fluid">Cadastar</button>
