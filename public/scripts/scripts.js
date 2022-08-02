@@ -59,9 +59,9 @@ function redirect() {
 function redsignin() {
     window.location.assign('/auth');
 }
-/* function redregister() {
+function redregister() {
     window.location.assign('/register');
-} */
+}
 function promo() {
     window.location.assign('/bloommodas/promocoes');    
 }
